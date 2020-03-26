@@ -16,7 +16,7 @@ for ip in f:
                 #getting the cert info
                 cert = OpenSSL.crypto.load_certificate(OpenSSL.crypto.FILETYPE_PEM, cert)
                 #print IP & issued to  
-                print x+" || "+cert.get_subject().get_components()[-1][1]
+                print newIP+" || "+cert.get_subject().get_components()[-1][1]
             except Exception,e:
                 print e
 
